@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Четвертый вариант</title>
+</head>
+
+<style>
+
+	body {
+		margin: 0;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	/*Шапки*/
+	.header-desktop,
+	.header-notebook16,
+	.header-notebook13,
+	.header-tablet,
+	.header-mobile {
+		display: none;
+		position: fixed;
+		width: auto;
+		z-index: 10px;
+	}
+
+	.header-notebook16 {
+		z-index: -5;
+	}
+
+	.header-notebook13 {
+		z-index: -10;
+	}
+
+	.header-tablet {
+		z-index: -15;
+	}
+
+	.header-mobile {
+		z-index: -20;
+	}
+
+	.header-desktop img,
+	.header-notebook16 img,
+	.header-notebook13 img,
+	.header-tablet img,
+	.header-mobile img {
+		position: absolute;
+		top: 0;
+	}
+
+	.header-notebook16,
+	.header-notebook13,
+	.header-tablet,
+	.header-mobile {
+		display: none;
+	}
+
+
+	.project img {
+		top: 0;
+	}
+
+	.notebook16 {
+		display: none;
+	}
+
+	.notebook13 {
+		display: none;
+	}
+
+	.tablet {
+		display: none;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.see {
+		display: block ;
+		width: 100%;
+	}
+
+
+
+
+	@media (max-width: 1600px) {
+
+
+		.desktop {
+			display: none;
+		}
+
+			.notebook16 {
+				display: block;
+			}
+
+		.notebook13 {
+			display: none;
+		}
+
+		.tablet {
+			display: none;
+		}
+
+	
+		.header-desktop {
+			display: none;
+		}
+
+			.header-notebook16 {
+				z-index: 100;
+			}
+
+		.header-notebook13 {
+			display: none;
+		}
+
+		.header-tablet {
+			display: none;
+		}
+
+		.header-mobile {
+			display: none;
+		}
+	
+
+	}
+
+
+
+
+	 @media (max-width: 1366px) {
+
+
+		.desktop {
+			display: none;
+		}
+
+		.notebook16 {
+			display: none;
+		}
+
+			.notebook13 {
+				display: block;
+			}
+
+		.tablet {
+			display: none;
+		}
+
+		.mobile {
+			display: none;
+		}
+
+
+		.header-desktop {
+			display: none;
+		}
+
+		.header-notebook16 {
+			display: none;
+		}
+
+			.header-notebook13 {
+				z-index: 100;
+				display: block;
+			}
+
+		.header-mobile {
+			display: none;
+		}
+
+
+	}	 
+
+
+
+
+	@media (max-width: 1024px) {
+
+
+		.desktop {
+			display: none;
+		}
+
+		.notebook16 {
+			display: none;
+		}
+
+		.notebook13 {
+			display: none;
+		}
+
+			.tablet {
+				display: block;
+			}
+
+		.mobile {
+			display: none;
+		}
+
+
+		.header-desktop {
+			display: none;
+		}
+
+		.header-notebook16 {
+			display: none;
+		}
+
+		.header-notebook13 {
+			display: none;
+		}
+
+			.header-tablet {
+				z-index: 100 ;
+				display: block;
+			}
+
+		.header-mobile {
+			display: none;
+		}
+	
+	}
+
+
+	
+
+	@media (max-width: 375px) {
+
+
+		.desktop {
+			display: none;
+		}
+
+		.notebook16 {
+			display: none;
+		}
+
+		.notebook13 {
+			display: none;
+		}
+
+		.tablet {
+			display: none;
+		}
+
+		.mobile {
+			display: block;
+		}
+
+
+		.header-desktop {
+			display: none;
+		}
+
+		.header-notebook16 {
+			display: none;
+		}
+
+		.header-notebook13 {
+			display: none;
+		}
+
+		.header-tablet {
+			display: none;
+		}
+
+			.header-mobile {
+				z-index: 100 ;
+				display: block;
+			}
+
+	} 
+
+
+
+</style>
+
+
+
+
+<body>
+
+	<div class="header-desktop">
+		<img src="header-desktop.png" alt="">
+	</div> 
+
+	<div class="header-notebook16">
+		<img src="header-notebook16.png" alt="">
+	</div>
+
+	 <div class="header-notebook13">
+		<img src="header-notebook13.png" alt="">
+	</div> 
+
+	
+	<div class="header-tablet">
+		<img src="header-tablet.png" alt="">
+	</div> 
+
+	<div class="header-mobile">
+		<img src="header-mobile.png" alt="">
+	</div> 
+
+
+
+
+	<div class="desktop">
+		<img src="Desktop-1920.jpg" alt="">
+	</div>
+
+	<div class="notebook16">
+		<img src="Notebook-1600.jpg" alt="">
+	</div>
+
+	<div class="notebook13">
+		<img src="Notebook-1360.jpg" alt="">
+	</div>
+
+	<div class="tablet">
+		<img src="Tablet-768.jpg" alt="">
+	</div>
+	
+	<div class="mobile">
+		<img src="Mobile-320.jpg" alt="">
+	</div>
+
+
+</body>
+
+
+
+
+<script src="script.js"></script>
+</html>
